@@ -1,0 +1,21 @@
+{
+  "name": "browser-stack-nodejs",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/payjp/app.git"
+  },
+  "private": true,
+  "scripts": {
+    "test": "CONFIG_FILE=local cucumber-js features/local.feature",
+    "single": "CONFIG_FILE=single cucumber-js features/single.feature",
+    "parallel": "CONFIG_FILE=parallel ./scripts/parallel.js features/single.feature"
+  },
+  "devDependencies": {
+    "selenium-webdriver": "^4.0.0-alpha.1",
+    "browserstack-local": "^1.0.0"
+  },
+  "dependencies": {
+    "cucumber": "^5.1.0"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "LP": {
+    "endpoint": "/",
+    "locators": {
+      "ログイン": {
+        "css": "#lp_header > div > div.btn_block > a.btn--lp.btn--border"
+      }
+    }
+  },
+  "ログイン": {
+    "endpoint": "/login",
+    "locators": {
+      "ログイン": {
+        "css": "body > div.mod-login > div > form > div:nth-child(5) > input"
+      },
+      "email": {
+        "name": "email"
+      },
+      "password": {
+        "name": "password"
+      }
+    }
+  },
+  "dashboard": {
+    "endpoint": "/d/",
+    "locators": {
+      "挨拶欄": {
+        "css": "body > div > div.header.shadow > div.header-main > div > div.header-profile > div.text.text--bold"
+      }
+    }
+  }
+}
